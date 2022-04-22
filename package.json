@@ -1,0 +1,31 @@
+{
+  "name": "afkbot",
+  "version": "1.0.0",
+  "description": "",
+  "config": {
+    "main": "index.js"
+  },
+  "scripts": {
+    "dev": "link-module-alias && nodemon index.js",
+    "start": "link-module-alias && pm2 start . --name afkbot",
+    "stop": "pm2 delete afkbot"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ascii-table": "^0.0.9",
+    "discord.js": "^13.6.0",
+    "dotenv": "^16.0.0",
+    "glob": "^7.2.0",
+    "link-module-alias": "^1.2.0",
+    "promisify": "^0.0.3",
+    "reflect-metadata": "^0.1.13"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "_moduleAliases": {
+    "$Validation": "src/Validation/"
+  }
+}
