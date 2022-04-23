@@ -29,7 +29,7 @@ function setAfk(client, user, guild, status, time ) {
                 userId: user.id,
                 guildId: guild.id,
                 status,
-                time,
+                time: parseInt(time / 1000),
                 isAfk: true
             });
             await data.save();
