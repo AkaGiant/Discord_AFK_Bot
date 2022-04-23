@@ -4,7 +4,7 @@ module.exports = {
     async execute(client) {
 
         // Set bots status
-        console.log(`${client.user.tag} Logged In!`)
+        console.log(`${client.user.tag} Logged In!`);
         
     }
 }
